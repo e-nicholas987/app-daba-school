@@ -50,7 +50,7 @@ const SectionWrapper = styled.section`
   height: 100vh;
   width: 100vw;
   margin-bottom: 2.5rem;
-  padding: 3rem 2.5d;
+  padding: 3rem 1.25rem;
 `;
 
 const BigText = styled.h1`
