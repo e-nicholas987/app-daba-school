@@ -14,11 +14,10 @@ function App() {
   return (
     <BrowserRouter>
       <GlobalStyles />
+      <Routes>
 
       {/* Public Routes */}
-      <Routes>
         <Route path="/" element={<Navigate to="onboarding" />} />
-
         <Route element={<PersistLogin />}>
           <Route path="/" element={<Onboarding />}>
             <Route path="onboarding" element={<OnboardingActions />} />
@@ -35,7 +34,10 @@ function App() {
         <Route element={<RequireAuth />}>
           <Route path="/dashboard" element={<Dashboard />} />
         </Route>
-        <Route path="*" element={<NotFound/>}/>
+
+        {/* 404 Route */}
+        <Route path="*" element={<NotFound />} />
+
       </Routes>
     </BrowserRouter>
   );
