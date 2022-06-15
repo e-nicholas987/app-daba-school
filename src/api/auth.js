@@ -20,8 +20,13 @@ const firebaseConfig = {
 initializeApp(firebaseConfig);
 
 const auth = getAuth();
+const GOOGLE_PEOPLE_API =
+  "https://www.googleapis.com/oauth2/v3/userinfo?access_token=";
 
-export const createUser = ({email, password}) =>
+export const getGoogleUserProfile = ({accessToken}) =>
+  fetch(`${GOOGLE_PEOPLE_API}${accessToken}`);
+
+export const createUser = ({ email, password }) =>
   createUserWithEmailAndPassword(auth, email, password);
 
 export const logIn = ({ email, password }) =>
