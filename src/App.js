@@ -8,6 +8,7 @@ import LoginForm from "./components/onboarding/LoginForm";
 import SignUpForm from "./components/onboarding/SignUpForm";
 import PasswordRecovery from "./components/onboarding/PasswordRecovery";
 import Dashboard from "./pages/Dashboard";
+import NotFound from "./pages/404";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route element={<RequireAuth />}>
           <Route path="/dashboard" element={<Dashboard />} />
         </Route>
+        <Route path="*" element={<NotFound/>}/>
       </Routes>
     </BrowserRouter>
   );
