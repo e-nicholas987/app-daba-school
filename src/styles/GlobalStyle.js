@@ -1,14 +1,15 @@
 import { createGlobalStyle } from "styled-components";
-import HelveticaNeueBold from "../assets/fonts/HelveticaNeue-Bold.woff";
+import HelveticaNeueUltraLight from "../assets/fonts/HelveticaNeue-Ultralight.woff"
 import HelveticaNeueThin from "../assets/fonts/HelveticaNeue-Thin.woff";
 import HelveticaNeueLight from "../assets/fonts/HelveticaNeue-Light.woff";
 import HelveticaNeueRegular from "../assets/fonts/HelveticaNeue-Regular.woff";
 import HelveticaNeueMedium from "../assets/fonts/HelveticaNeue-Medium.woff";
+import HelveticaNeueBold from "../assets/fonts/HelveticaNeue-Bold.woff";
 
 const GlobalStyles = createGlobalStyle`
 @font-face {
     font-family: 'Helvetica Neue';
-    src: url('../assets/fonts/HelveticaNeue-Ultralight.woff') format('woff');
+    src: url(${HelveticaNeueUltraLight}) format('woff');
     font-weight: 100;
     font-style: normal;
 }
