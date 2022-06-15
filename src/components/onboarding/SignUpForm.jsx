@@ -27,12 +27,12 @@ const SignUpForm = () => {
   const [firstName, firstNameInput] = useFormInput({
     label: "First Name",
     name: "firstName",
-    placeholder: "First Name",
+    placeholder: "Enter your first name",
   });
   const [lastName, lastNameInput] = useFormInput({
     label: "Last Name",
     name: "lastName",
-    placeholder: "Last Name",
+    placeholder: "Enter your last name",
   });
   const [email, emailInput] = useFormInput({
     label: "Email",
@@ -88,13 +88,13 @@ const SignUpForm = () => {
         </FormInputContainer>
 
         <PrimaryButton
-          defaultText="Create my account"
+          defaultText="Create account"
           loadingText="Creating account..."
           isLoading={isLoading}
         />
       </form>
       <Text>
-        Already have an account{" "}
+        Already own an account?{" "}
         <RedLink to="../onboarding/login">Log in</RedLink>
       </Text>
     </SectionWrapper>
@@ -105,7 +105,7 @@ const SignUpForm = () => {
 
 const FormInputContainer = styled.div`
   display: grid;
-  gap: 12px;
+  gap: .75rem;
   margin-bottom: 2.5rem;
 `;
 
@@ -113,6 +113,10 @@ const Text = styled.p`
   margin-top: 1.5rem;
   text-align: center;
   font-size: 16px;
+
+  a{
+    font-weight: 700;
+  }
 `;
 
 export default SignUpForm;

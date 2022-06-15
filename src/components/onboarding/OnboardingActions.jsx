@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import GoogleLoginButton from "../button/GoogleLoginButton"
+import GoogleLoginButton from "../button/GoogleLoginButton";
 
 const OnboardingActions = () => {
   return (
@@ -26,7 +26,7 @@ const OnboardingActions = () => {
           </a>
         </Text>
 
-        <GoogleLoginButton/>
+        <GoogleLoginButton />
         <Line>
           <div></div>
           <span>OR</span>
@@ -39,7 +39,7 @@ const OnboardingActions = () => {
           <PlainButton>Login to my account</PlainButton>
         </Link>
         <a href="https://app.daba.school/courses">
-          <HoverButton>Browse Courses</HoverButton>
+          <HoverButton>Browse courses</HoverButton>
         </a>
       </Container>
     </SectionWrapper>
@@ -96,6 +96,7 @@ const Line = styled.div`
 
   span {
     color: rgba(164, 164, 164, 1);
+    line-height: 24px;
     margin-left: 14px;
     margin-right: 14px;
   }
@@ -108,41 +109,24 @@ const RedButton = styled.button`
   justify-content: center;
   align-items: center;
   border-radius: 30px;
-  margin: auto;
+  margin: 0 auto .5rem auto ;
   background: rgb(216, 56, 58);
   font-weight: 700;
   font-size: 16px;
   color: rgb(255, 255, 255);
-  margin-bottom: 0.5rem;
 `;
 
-const PlainButton = styled.button`
-  height: 50px;
-  width: 70%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 30px;
-  margin: auto;
+const PlainButton = styled(RedButton)`
   background: transparent;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 16px;
   color: rgb(255, 255, 255);
-  margin-bottom: 0.5rem;
 `;
 
-const HoverButton = styled.button`
-  height: 50px;
-  width: 70%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 30px;
+const HoverButton = styled(RedButton)`
   border: 2px solid rgb(216, 56, 58);
   margin: auto;
   background: transparent;
-  font-weight: 700;
-  font-size: 16px;
   color: rgb(216, 56, 58);
   transition-duration: 0.3s;
   transition-property: all;
@@ -151,6 +135,10 @@ const HoverButton = styled.button`
   &:hover {
     background: rgb(216, 56, 58);
     color: rgb(255, 255, 255);
+  }
+
+  @media (min-width: 767px) {
+    margin: 5.5rem auto 0 auto;
   }
 `;
 

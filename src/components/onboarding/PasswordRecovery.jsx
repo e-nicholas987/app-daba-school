@@ -28,7 +28,7 @@ const PasswordRecovery = () => {
       </form>
       <Text>
         Don't own an account?{" "}
-        <RedLink to="../onboarding/sign-up">Sign up</RedLink>
+        <RedLink to="../onboarding/sign-up">Sign Up</RedLink>
       </Text>
     </SectionWrapper>
   );
@@ -37,12 +37,16 @@ const PasswordRecovery = () => {
 // Styles
 
 const FormInputContainer = styled.div`
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.75rem;
 `;
 
 const Text = styled.p`
   text-align: center;
   margin-top: 1.5rem;
+
+  a {
+    font-weight: 700;
+  }
 `;
 
 export default PasswordRecovery;

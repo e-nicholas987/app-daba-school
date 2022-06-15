@@ -72,7 +72,7 @@ const LoginForm = () => {
           {passwordInput}
           <RedLink to="../onboarding/forgot-password">Forgot password?</RedLink>
         </FormInputContainer>
-      
+
         <PrimaryButton
           defaultText="Login to your account"
           loadingText="Logging in..."
@@ -80,7 +80,7 @@ const LoginForm = () => {
         ></PrimaryButton>
       </form>
       <Text>
-        Don't have an account?{" "}
+        Don't own an account?{" "}
         <RedLink to="../onboarding/signup">Sign Up</RedLink>
       </Text>
     </SectionWrapper>
@@ -98,10 +98,13 @@ const FormInputContainer = styled.div`
   }
 `;
 
+const ForgotPassword = styled(RedLink)`
+  line-height: 24px;
+`;
+
 const Text = styled.p`
   margin-top: 1.5rem;
   text-align: center;
-
 `;
 
 export default LoginForm;

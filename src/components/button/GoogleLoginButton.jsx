@@ -49,7 +49,7 @@ const StyledButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
+  gap: 8px;
   margin: auto;
   margin-bottom: 3rem;
   padding-top: 0.5rem;
@@ -58,7 +58,7 @@ const StyledButton = styled.button`
   span {
     font-family: inherit;
     font-size: 16px;
-    font-weight: 200;
+    font-weight: 100;
     color: rgb(255, 255, 255);
   }
 `;

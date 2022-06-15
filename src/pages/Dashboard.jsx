@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { FormError } from "../styles/FormError.styled";
 import PrimaryButton from "../components/button/PrimaryButton";
@@ -7,10 +8,12 @@ import { logOut } from "../api/auth";
 
 const Dashboard = () => {
   const { auth, setAuth } = useAuth();
+  const navigate = useNavigate();
   const [errorMessage, setErrorMessage] = useState(null);
 
   const handleButtonClick = () => {
     setAuth("");
+    navigate("../onboarding")
     logOut()
       .then(() => {})
       .catch((error) => {

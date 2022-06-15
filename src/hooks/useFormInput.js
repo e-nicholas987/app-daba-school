@@ -11,7 +11,7 @@ export const useFormInput = ({ label, type = "text", name, placeholder }) => {
   };
 
   // Input Element
-  
+
   const inputElement = (
     <FormGroup>
       <StyledLabel htmlFor={name}>{label}</StyledLabel>
@@ -38,10 +38,11 @@ export const useFormInput = ({ label, type = "text", name, placeholder }) => {
 
 const FormGroup = styled.div`
   display: grid;
-  gap: 8px;
+  gap: 0.5rem;
 `;
 
 const StyledLabel = styled.label`
+  line-height: 24px;
   font-weight: 700;
   color: rgb(83, 92, 101);
 `;
@@ -51,12 +52,12 @@ const FormInputWrapper = styled.div`
 
   button {
     position: absolute;
-    right: 0.75rem;
+    right: 0;
     top: 0;
+    width: 61px;
     height: 100%;
     font-weight: 400;
     display: flex;
-    justify-content: center;
     align-items: center;
     color: rgb(216, 56, 58);
     background: transparent;
@@ -76,7 +77,7 @@ const StyledInput = styled.input`
   border: 1px solid rgb(32, 37, 50);
   border-radius: 4px;
   outline: none;
-  height: 50px;
+  height: 52px;
   font-size: 16px;
 
   &::placeholder {
