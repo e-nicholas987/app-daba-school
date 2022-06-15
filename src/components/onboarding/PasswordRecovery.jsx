@@ -13,11 +13,16 @@ const PasswordRecovery = () => {
     placeholder: "user@example.com",
     type: "email",
   });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <SectionWrapper>
       <CloseButton />
       <SectionTitle>Forgot Password</SectionTitle>
-      <form>
+      <form onSubmit={handleSubmit}>
         <FormInputContainer>{emailInput}</FormInputContainer>
         <PrimaryButton defaultText="Reset Password" />
       </form>

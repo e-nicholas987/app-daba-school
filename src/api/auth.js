@@ -23,7 +23,7 @@ const auth = getAuth();
 const GOOGLE_PEOPLE_API =
   "https://www.googleapis.com/oauth2/v3/userinfo?access_token=";
 
-export const getGoogleUserProfile = ({accessToken}) =>
+export const getGoogleUserProfile = ({ accessToken }) =>
   fetch(`${GOOGLE_PEOPLE_API}${accessToken}`);
 
 export const createUser = ({ email, password }) =>

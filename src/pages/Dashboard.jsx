@@ -47,13 +47,14 @@ const SectionWrapper = styled.section`
   height: 100vh;
   width: 100vw;
   margin-bottom: 2.5rem;
+  padding: 3rem 2.5d;
 `;
 
 const BigText = styled.h1`
   font-size: 30px;
   color: rgb(225, 225, 225);
   text-align: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 5rem;
 `;
 
 const ButtonContainer = styled.div`
