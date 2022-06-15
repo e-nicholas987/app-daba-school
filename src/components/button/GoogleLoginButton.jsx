@@ -22,7 +22,7 @@ const GoogleLoginButton = () => {
               displayName: name,
               email,
             });
-            navigate("../dashboard", { replace: true });
+            navigate("../dashboard");
           }
         })
         .catch(() => prompt("Login Failed"));

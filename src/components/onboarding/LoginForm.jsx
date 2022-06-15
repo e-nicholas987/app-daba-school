@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate, Navigate } from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 import styled from "styled-components";
 import { SectionTitle } from "../../styles/SectionTitle.styled";
 import { SectionWrapper } from "../../styles/SectionWrapper.styled";
@@ -58,7 +58,6 @@ const LoginForm = () => {
       });
   };
 
-  if (auth.token) return <Navigate to="../dashboard" />;
 
   return (
     <SectionWrapper>
