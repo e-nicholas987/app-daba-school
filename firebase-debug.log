@@ -1,0 +1,70 @@
+[debug] [2022-06-15T11:55:22.935Z] ----------------------------------------------------------------------
+[debug] [2022-06-15T11:55:22.936Z] Command:       /usr/local/bin/node /Users/emeka/Desktop/daba/node_modules/.bin/firebase init hosting
+[debug] [2022-06-15T11:55:22.936Z] CLI Version:   11.1.0
+[debug] [2022-06-15T11:55:22.936Z] Platform:      darwin
+[debug] [2022-06-15T11:55:22.936Z] Node Version:  v18.0.0
+[debug] [2022-06-15T11:55:22.937Z] Time:          Wed Jun 15 2022 12:55:22 GMT+0100 (West Africa Standard Time)
+[debug] [2022-06-15T11:55:22.937Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-06-15T11:55:22.940Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-15T11:55:22.940Z] > authorizing via signed-in user (e.nicholas987@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/emeka/Desktop/daba
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-06-15T11:55:35.748Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-06-15T11:55:36.526Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2022-06-15T11:55:36.526Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project dabaappp (DabaAppp) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2022-06-15T11:59:32.980Z] ----------------------------------------------------------------------
+[debug] [2022-06-15T11:59:32.981Z] Command:       /usr/local/bin/node /Users/emeka/Desktop/daba/node_modules/.bin/firebase init hosting
+[debug] [2022-06-15T11:59:32.981Z] CLI Version:   11.1.0
+[debug] [2022-06-15T11:59:32.981Z] Platform:      darwin
+[debug] [2022-06-15T11:59:32.981Z] Node Version:  v18.0.0
+[debug] [2022-06-15T11:59:32.982Z] Time:          Wed Jun 15 2022 12:59:32 GMT+0100 (West Africa Standard Time)
+[debug] [2022-06-15T11:59:32.982Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-06-15T11:59:32.985Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-15T11:59:32.985Z] > authorizing via signed-in user (e.nicholas987@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/emeka/Desktop/daba
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-06-15T11:59:36.664Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-06-15T11:59:37.362Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2022-06-15T11:59:37.363Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
