@@ -18,7 +18,8 @@ const LoginForm = () => {
   const navigate = useNavigate();
   const [errorMessage, setErrorMessage] = useState(null);
   const errorTypes = {
-    "auth/wrong-password": { message: "Invalid username/password" },
+    "auth/wrong-password": { message: "Invalid credentials provided" },
+    "auth/user-not-found": { message: "Invalid Email Provided" },
     "auth/network-request-failed": {
       message: "Something went wrong ",
     },
